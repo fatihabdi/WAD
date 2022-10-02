@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./dist/output.css" rel="stylesheet" />
+    <title>Form | Abdi Fatih</title>
+  </head>
+  <body class="bg-teal-600">
+    <form id="myForm">
+      <h1
+        class="pt-5 mb-10 text-2xl font-semibold text-slate-800"
+        align="center"
+      >
+        FORM KEPUASAN MAHASISWA TEL-U
+      </h1>
+      <div class="flex items-center justify-center">
+        <div
+          class="container rounded-lg w-[620px] shadow-md border-none min-h-max bg-slate-50"
+        >
+          <h1 class="mt-5 ml-5 text-lg font-semibold">Data Diri</h1>
+          <div class="flex mt-2 ml-5">
+            <h1 class="mr-5 text-lg font-medium">
+              Nama <span class="ml-20">:</span>
+            </h1>
+            <input
+              type="text"
+              placeholder="Masukkan Nama"
+              class="border border-black rounded w-[300px] pl-3 h-[32px]"
+            />
+          </div>
+          <div class="flex mt-2 ml-5">
+            <h1 class="mr-5 text-lg font-medium">
+              NIM <span class="ml-[95px]">:</span>
+            </h1>
+            <input
+              type="text"
+              placeholder="Masukkan NIM"
+              class="border border-black rounded w-[300px] pl-3 h-[32px]"
+            />
+          </div>
+          <div class="flex items-center mt-2 ml-5">
+            <h1 class="mr-5 text-lg font-medium">
+              Jurusan <span class="ml-16">:</span>
+            </h1>
+            <select class="border border-black rounded h-[32px] w-[300px] pl-3">
+              <option>--Pilih Jurusan--</option>
+              <option>S1 Sistem Informasi</option>
+              <option>S1 Teknik Industri</option>
+              <option>S1 Informatika</option>
+            </select>
+          </div>
+          <div class="flex items-center mt-2 ml-5">
+            <h1 class="mr-5 text-lg font-medium">
+              Jenis Kelamin <span class="ml-4">:</span>
+            </h1>
+            <input type="radio" name="jenis-kelamin" class="mr-2" /> Laki-Laki
+            <input type="radio" name="jenis-kelamin" class="ml-3 mr-2" />
+            Perempuan
+          </div>
+          <div class="flex items-center mt-2 ml-5">
+            <h1 class="mr-5 text-lg font-semibold">Kepuasan Fasilitas</h1>
+          </div>
+          <div class="flex items-center mt-2 ml-5">
+            <h1 class="mr-5 text-lg font-medium">
+              Kepuasan Dosen <span class="">:</span>
+            </h1>
+
+            <input type="radio" name="kepuasan-dosen" class="mr-1" /> Sangat
+            Puas
+            <input type="radio" name="kepuasan-dosen" class="ml-2 mr-1" /> Puas
+            <input type="radio" name="kepuasan-dosen" class="ml-2 mr-1" /> Cukup
+            Puas
+            <input type="radio" name="kepuasan-dosen" class="ml-2 mr-1" /> Tidak
+            Puas
+          </div>
+          <div class="flex items-center mt-2 ml-5">
+            <h1 class="mr-5 text-lg font-medium">
+              Kepuasan Kelas <span class="ml-[7px]">:</span>
+            </h1>
+
+            <input type="radio" name="kepuasan-kelas" class="mr-1" /> Sangat
+            Puas
+            <input type="radio" name="kepuasan-kelas" class="ml-2 mr-1" /> Puas
+            <input type="radio" name="kepuasan-kelas" class="ml-2 mr-1" /> Cukup
+            Puas
+            <input type="radio" name="kepuasan-kelas" class="ml-2 mr-1" /> Tidak
+            Puas
+          </div>
+          <div class="flex items-center mt-2 ml-5">
+            <h1 class="mr-5 text-lg font-medium">
+              Kepuasan Kantin <span class="ml-[1px]">:</span>
+            </h1>
+
+            <input type="radio" name="kepuasan-kantin" class="mr-1" /> Sangat
+            Puas
+            <input type="radio" name="kepuasan-kantin" class="ml-2 mr-1" /> Puas
+            <input type="radio" name="kepuasan-kantin" class="ml-2 mr-1" />
+            Cukup Puas
+            <input type="radio" name="kepuasan-kantin" class="ml-2 mr-1" />
+            Tidak Puas
+          </div>
+          <div class="flex items-center mt-2 ml-5">
+            <h1 class="mr-5 text-lg font-medium">
+              Kepuasan Lab <span class="ml-[23px]">:</span>
+            </h1>
+
+            <input type="radio" name="kepuasan-lab" class="mr-1" /> Sangat Puas
+            <input type="radio" name="kepuasan-lab" class="ml-2 mr-1" /> Puas
+            <input type="radio" name="kepuasan-lab" class="ml-2 mr-1" /> Cukup
+            Puas
+            <input type="radio" name="kepuasan-lab" class="ml-2 mr-1" /> Tidak
+            Puas
+          </div>
+          <div class="flex mt-2 ml-5">
+            <h1 class="mr-5 text-lg font-medium">
+              Kritik & Saran <span class="ml-[29px]">:</span>
+            </h1>
+            <textarea
+              class="border border-black rounded w-[300px] pl-3 h-[80px] pt-1"
+              placeholder="Masukkan kritik dan saran"
+            ></textarea>
+          </div>
+          <input type="checkbox" class="ml-[188px] mt-3" /> Sudah Yakin
+          <button
+            class="bg-blue-500 text-white rounded w-[150px] h-[32px] ml-[188px] mt-2 mb-5"
+            onclick="alert('Terima Kasih')"
+          >
+            Submit
+          </button>
+          <button
+            class="border-blue-500 border text-blue-500 rounded w-[150px] h-[32px] mt-2 mb-5"
+            onclick="document.getElementById('myForm').reset()"
+          >
+            Cancel
+          </button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
